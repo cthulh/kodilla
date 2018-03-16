@@ -9,6 +9,8 @@ body {
   background: lightblue;
 }
 
+/* First level menu */
+
 nav {
   background: #3498db;
   text-align: center;
@@ -20,10 +22,13 @@ nav ul {
   margin: 0;
 }
 
+nav li, nav a {
+  display: inline-block;
+}
+
 nav a {
   text-decoration: none;
   color: white;
-  display: inline-block;
   height: 50px;
   line-height: 50px;
   padding: 0 10px;
@@ -34,17 +39,11 @@ nav a:hover {
   color:  #3255a7;
 }
 
-nav li {
-  display: inline-block;
-}
-
 /* Second level menu */
 
 nav li ul {
   display: none;
   background: rgba(41, 128, 185,0.8);
-  /*background: #4577ED;
-  rgb(41, 128, 185)*/
 }
 
 nav ul ul li, nav li ul a, nav li:hover ul {
