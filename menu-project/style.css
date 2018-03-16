@@ -10,7 +10,7 @@ body {
 }
 
 nav {
-  background: #4577ED;
+  background: #3498db;
   text-align: center;
 }
 
@@ -42,7 +42,9 @@ nav li {
 
 nav li ul {
   display: none;
-  background: #4577ED;
+  background: rgba(41, 128, 185,0.8);
+  /*background: #4577ED;
+  rgb(41, 128, 185)*/
 }
 
 nav ul ul li, nav li ul a, nav li:hover ul {
@@ -51,4 +53,8 @@ nav ul ul li, nav li ul a, nav li:hover ul {
 
 nav li:hover ul {
   position: absolute;
+}
+
+nav ul ul li {
+  width: 130px;
 }
