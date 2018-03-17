@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
 
+* {
+    box-sizing: border-box;
+}
+
+
 /* 1. Jumbotron */
 
 .jumbotron {
@@ -36,5 +41,14 @@
   background: #7E9FED;
 }
 
-
 /* 1. Gallery */
+
+.gallery img {
+  float: left;
+  width: 25%;
+}
+
+.gallery img:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
