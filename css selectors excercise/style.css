@@ -1,7 +1,79 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 body {
-    margin: 0;
-    background-color: #2ecc71;
-    font-family: 'Open Sans';
+  margin: 0;
+  background-color: #2ecc71;
+  font-family: 'Open Sans';
+}
+
+.container {
+  max-width: 650px;
+  min-width: 350px;
+  width: 70%;
+  margin: 15px auto;
+  text-align: justify;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 1px black;
+}
+
+nav {
+  background-color: #222;
+  color: white;
+  margin-bottom: 40px;
+  box-shadow: 0px 0px 1px 1px black;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li, nav a {
+  display: inline-block;
+}
+
+nav ul li a {
+  box-sizing: border-box;
+  min-width: 120px;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+nav ul li a:hover {
+  background-color: #53555D;
+}
+
+.container:last-child > p:nth-of-type(1) {
+  font-style: italic;
+}
+
+.container:last-child > p:nth-of-type(2) {
+  text-transform: uppercase;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+table th, table td {
+  padding: 10px;
+}
+
+table thead {
+  background-color: #4D71FA;
+}
+
+table tr:not(:last-child) {
+  border-bottom: 1px solid #E6E6E7;
+}
+
+table tbody tr:hover {
+  background-color: #E6E6E7;
 }
