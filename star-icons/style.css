@@ -1,3 +1,63 @@
-body {
+.star8 {
+  display: inline-block;
+  margin: 2em;
+  transform: rotate(22deg);
+  transition: background linear .3s;
+}
+
+.star8::before, i.fa, i.fa::before {
+  position: absolute;
+}
+
+.star8::before {
+  background: white;
+  content: "";
+  top: -5px;
+  left: -5px;
+  transform: rotate(45deg);
+}
+
+.star8, .star8::before, i.fa {
+  width: 80px;
+  height: 80px;
+}
+
+.gold, .gold::before {
+  border: 6px solid #ffc107;
+}
+
+.orange, .orange::before {
+  border: 6px solid #fd7e33;
+}
+
+.blue, .blue::before {
+  border: 6px solid #3fb0ac;
+}
+
+i.fa {
   margin: 0;
+  background: white;
+  font-size: 60px;
+  transform: rotate(-22deg);
+}
+
+i.fa::before {
+  /*transform: rotate(-22deg);*/
+  margin: 10px;
+}
+
+.gold:hover::before, .gold:hover, .gold:hover i.fa {
+  background: #ffc107;
+}
+
+.orange:hover::before, .orange:hover, .orange:hover i.fa {
+  background: #fd7e33;
+}
+
+.blue:hover::before, .blue:hover, .blue:hover i.fa {
+  background: #3fb0ac;
+}
+
+.gold, .gold::before, .gold i.fa, .orange, .orange::before, .orange i.fa, .blue, .blue::before, .blue i.fa {
+  transition: ease-in-out .3s;
 }
