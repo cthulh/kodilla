@@ -1,0 +1,149 @@
+h2 {
+  color: #505050;
+  font-size: 40px;
+}
+
+.social {
+  margin: 0 auto;
+  width: 500px;
+  text-align: center;
+  padding: 50px;
+}
+
+.icon-btn {
+  width: 75px;
+  height: 75px;
+  border: 0;
+  background: #FFF;
+  border-radius: 50%;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 40px;
+}
+
+.twitter {
+  color: #4099FF;
+}
+
+.facebook {
+  color: #3B5998;
+}
+
+.google-plus {
+  color: #DB5A3C;
+}
+
+.instagram {
+  color: #5C3D2E;
+}
+
+.github {
+  color: #4183C4;
+}
+
+/* ANIMATION */
+
+.twitter:hover {
+  animation: twits .3s ease-in-out forwards;
+}
+
+.facebook:hover {
+  animation: faces .3s ease-in-out forwards;
+}
+
+.google-plus:hover {
+  animation: googles .3s ease-in-out forwards;
+}
+
+.instagram:hover {
+  animation: insts .3s ease-in-out forwards;
+}
+
+.github:hover {
+  animation: gits .3s ease-in-out forwards;
+}
+
+/* Twitter icon animation */
+@keyframes twits {
+  0% {
+    background: inherit;
+    color: #4099FF;
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.8);
+  }
+  100% {
+    background: #4099FF;
+    color: white;
+    transform: scale(1);
+  }
+}
+
+/* Facebook icon animation */
+@keyframes faces {
+  0% {
+    background: inherit;
+    color: #3B5998;
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.8);
+  }
+  100% {
+    background: #3B5998;
+    color: white;
+    transform: scale(1);
+  }
+}
+
+/* Google Plus icon animation */
+@keyframes googles {
+  0% {
+    background: inherit;
+    color: #DB5A3C;
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.8);
+  }
+  100% {
+    background: #DB5A3C;
+    color: white;
+    transform: scale(1);
+  }
+}
+
+/* Instagram icon animation */
+@keyframes insts {
+  0% {
+    background: inherit;
+    color: #5C3D2E;
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.8);
+  }
+  100% {
+    background: #5C3D2E;
+    color: white;
+    transform: scale(1);
+  }
+}
+
+/* Github icon animation */
+@keyframes gits {
+  0% {
+    background: inherit;
+    color: #4183C4;
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.8);
+  }
+  100% {
+    background: #4183C4;
+    color: white;
+    transform: scale(1);
+  }
+}
