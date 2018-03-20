@@ -38,11 +38,10 @@ i.fa {
   margin: 0;
   background: white;
   font-size: 60px;
-  transform: rotate(-22deg);
 }
 
 i.fa::before {
-  /*transform: rotate(-22deg);*/
+  transform: rotate(-22deg);
   margin: 10px;
 }
 
