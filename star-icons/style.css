@@ -45,6 +45,10 @@ i.fa::before {
   margin: 10px;
 }
 
+.star8:hover i.fa {
+  color: white;
+}
+
 .gold:hover::before, .gold:hover, .gold:hover i.fa {
   background: #ffc107;
 }
@@ -57,6 +61,6 @@ i.fa::before {
   background: #3fb0ac;
 }
 
-.gold, .gold::before, .gold i.fa, .orange, .orange::before, .orange i.fa, .blue, .blue::before, .blue i.fa {
+.star8, .star8::before, .star8 i.fa {
   transition: ease-in-out .3s;
 }
