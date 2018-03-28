@@ -18,30 +18,41 @@ body {
 header {
   width: 100%;
   height: 50px;
-  background: #313234;
 }
 
-header>nav ul {
-  margin: 0;
+.slogan h1, .featured h1, .numbers p, header>nav ul, footer>p {
   padding: 0;
-  list-style-type: none;
+  margin: 0;
+}
+
+header>nav ul, .slogan {
   float: right;
 }
 
-header>nav ul li {
+header>nav ul li, .dot, .numbers p, .info hr, .info h3 {
   display: inline-block;
+}
+
+.slogan, .dots, .layer, .layer>i.fa {
+  position: absolute;
+}
+
+.gallery .col, .hero, .oval {
+  position: relative;
 }
 
 header>nav ul>li>a {
   line-height: 50px;
   padding: 0 20px;
   text-decoration: none;
-  color: #fff;
+}
+
+header>nav ul>li>a, .slogan, .icons>h2, .featured h1, .awesome h1, .numbers p.stat-title, .info h3 {
   text-transform: uppercase;
 }
 
-header>nav ul>li>a:hover {
-  color: #01CDEB;
+header>nav ul {
+  list-style-type: none;
 }
 
 header>nav img {
@@ -49,9 +60,9 @@ header>nav img {
 }
 
 .container {
+  margin: 0 auto;
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
 }
 
 .clearfix::before, .clearfix::after {
@@ -64,14 +75,13 @@ header>nav img {
   width: 100%;
   height: 60vh;
   background: no-repeat center/cover url("https://s3.eu-west-2.amazonaws.com/some-random-photos/mia-baker-322596-unsplash.jpg");
-  position: relative;
 }
 
-.slogan, .awesome, .role h2, .icons>i.fa {
+.slogan, .awesome, .role h2, .icons>i.fa, header>nav ul>li>a, footer, .info {
   color: #fff;
 }
 
- .icons:hover h2 {
+header>nav ul>li>a:hover, .icons:hover h2, .numbers p.stat-title {
    color: #01CDEB;
  }
 
@@ -91,8 +101,12 @@ header>nav img {
   background: #fff;
 }
 
-.icons>i.fa {
+.icons>i.fa, header, .info {
   background: #313234;
+}
+
+footer {
+  background: #252726;
 }
 
 .icons:hover>i.fa {
@@ -100,42 +114,46 @@ header>nav img {
 }
 
 .layer, .slogan {
-    background: rgba(0,0,0,0.7);
+  background: rgba(0,0,0,0.7);
 }
 
 .slogan {
   max-width: 800px;
-  float: right;
-  text-transform: uppercase;
   padding: 20px 200px 20px 30px;
-  position: absolute;
   top: 25%;
   right: 0;
 }
 
-.slogan h1, .featured h1 {
-  font-size: 2em;
-  padding: 0;
-  margin: 0;
+.numbers p.stat-title {
+  font-size: 1.5rem;
 }
 
-.awesome h1 {
-  font-size: 3em;
+.slogan h1, .featured h1 {
+  font-size: 2rem;
+}
+
+.awesome h1, .numbers p.stat {
+  font-size: 3.5rem;
 }
 
 .slogan h1::first-line {
   font-weight: 200;
 }
 
-.dots {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
+.icons, .featured, .crew h2, .numbers p, .dots, footer {
   text-align: center;
 }
 
+.bold {
+  font-weight: bold;
+}
+
+.dots {
+  width: 100%;
+  bottom: 0;
+}
+
 .dot {
-  display:inline-block;
   width: 25px;
   height: 25px;
   border-radius: 50%;
@@ -176,10 +194,6 @@ header>nav img {
 .col-offset-11 {margin-left: 91.66%;}
 .col-offset-12 {margin-left: 100%;}
 
-.icons, .featured, .crew h2 {
-  text-align: center;
-}
-
 .icons>i.fa {
   font-size: 75px;
   padding: 25px;
@@ -194,7 +208,6 @@ header>nav img {
  .icons>h2, .featured h1, .awesome h1 {
    margin-bottom: 0;
    margin-top: 30px;
-   text-transform: uppercase;
  }
 
 section>.container {
@@ -211,6 +224,7 @@ section>.container {
   background: url("http://via.placeholder.com/200x200");
 }
 
+/* Gallery pictures */
 .pic-1 {background: url("https://s3.eu-west-2.amazonaws.com/some-random-photos/somepic1.png");}
 .pic-2 {background: url("https://s3.eu-west-2.amazonaws.com/some-random-photos/somepic2.png");}
 .pic-3 {background: url("https://s3.eu-west-2.amazonaws.com/some-random-photos/somepic3.png");}
@@ -224,14 +238,13 @@ section>.container {
 .pic-11 {background: url("https://s3.eu-west-2.amazonaws.com/some-random-photos/somepic2.png");}
 .pic-12 {background: url("https://s3.eu-west-2.amazonaws.com/some-random-photos/somepic1.png");}
 
+
 .gallery .col {
   padding: 0;
-  position: relative;
   overflow: hidden;
 }
 
 .layer {
-  position: absolute;
   top: -250px;
   right: 0;
   width: 100%;
@@ -244,7 +257,6 @@ section>.container {
   padding: 8px;
   border-radius: 5%;
   margin: 83px 0;
-  position: absolute;
 }
 
 .layer>i.fa-camera-retro {
@@ -268,10 +280,10 @@ section>.container {
   width: 250px;
   border-radius: 50%;
   margin: 50px auto 10px;
-  position: relative;
   overflow: hidden;
 }
 
+/* Eployees pictures */
 .oval-1 {background-image: url("https://s3.eu-west-2.amazonaws.com/some-random-photos/portrait1.png");}
 .oval-2 {background-image: url("https://s3.eu-west-2.amazonaws.com/some-random-photos/portrait3.png");}
 .oval-3 {background-image: url("https://s3.eu-west-2.amazonaws.com/some-random-photos/portrait2.png");}
@@ -292,4 +304,28 @@ section>.container {
 
 .awesome img {
   width: 400px;
+}
+
+.numbers p {
+  width: 100%;
+}
+
+.info>.container {
+  margin-bottom: 0;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+}
+
+.info hr {
+  margin-left: 20px;
+  width: 100px;
+}
+
+.info .col {
+  padding: 0;
+  padding-left: 10px;
 }
