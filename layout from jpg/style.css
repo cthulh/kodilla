@@ -67,12 +67,46 @@ header>nav img {
   position: relative;
 }
 
+.slogan, .awesome, .role h2, .icons>i.fa {
+  color: #fff;
+}
+
+ .icons:hover h2 {
+   color: #01CDEB;
+ }
+
+ .icons>p, .featured p {
+   color: #313234;
+ }
+
+.layer>i.fa {
+   color: #000;
+}
+
+.dot {
+  background: grey;
+}
+
+.dot:hover, .layer>i.fa {
+  background: #fff;
+}
+
+.icons>i.fa {
+  background: #313234;
+}
+
+.icons:hover>i.fa {
+  background: #01CDEB;
+}
+
+.layer, .slogan {
+    background: rgba(0,0,0,0.7);
+}
+
 .slogan {
-  background-color: rgba(0,0,0,0.7);
   max-width: 800px;
   float: right;
   text-transform: uppercase;
-  color: #fff;
   padding: 20px 200px 20px 30px;
   position: absolute;
   top: 25%;
@@ -83,6 +117,10 @@ header>nav img {
   font-size: 2em;
   padding: 0;
   margin: 0;
+}
+
+.awesome h1 {
+  font-size: 3em;
 }
 
 .slogan h1::first-line {
@@ -100,13 +138,8 @@ header>nav img {
   display:inline-block;
   width: 25px;
   height: 25px;
-  background: grey;
   border-radius: 50%;
   margin: 20px;
-}
-
-.dot:hover {
-  background: #fff;
 }
 
 .col {
@@ -149,27 +182,16 @@ header>nav img {
 
 .icons>i.fa {
   font-size: 75px;
-  background: #313234;
-  color: #fff;
   padding: 25px;
   border-radius: 10px;
 }
 
-.icons:hover>i.fa {
-  background: #01CDEB;
-}
-
- .icons:hover h2 {
-   color: #01CDEB;
- }
-
  .icons>p, .featured p {
-   color: grey;
    padding: 0 40px;
    margin: 4px;
  }
 
- .icons>h2, .featured h1 {
+ .icons>h2, .featured h1, .awesome h1 {
    margin-bottom: 0;
    margin-top: 30px;
    text-transform: uppercase;
@@ -208,20 +230,17 @@ section>.container {
   overflow: hidden;
 }
 
-.layer, .crew .layer {
+.layer {
   position: absolute;
   top: -250px;
   right: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.7);
   transition: top 0.4s;
 }
 
 .layer>i.fa {
   font-size: 18px;
-  color: #000;
-  background: #fff;
   padding: 8px;
   border-radius: 5%;
   margin: 83px 0;
@@ -243,6 +262,8 @@ section>.container {
 .oval {
   background: url("http://via.placeholder.com/200x200");
   background-size: cover;
+  -webkit-filter: grayscale(100%);
+  filter: gray;
   height: 250px;
   width: 250px;
   border-radius: 50%;
@@ -257,6 +278,18 @@ section>.container {
 .oval-4 {background-image: url("https://s3.eu-west-2.amazonaws.com/some-random-photos/portrait4.png");}
 
 .role h2 {
-  color: #fff;
   margin-top: 40%;
+}
+
+.awesome {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a8b3dc+60,403f63+95,403f63+100 */
+  background: #313234; /* Old browsers */
+  background: -moz-linear-gradient(left, #313234 60%, #403f63 95%, #403f63 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #313234 60%,#403f63 95%,#403f63 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #313234 60%,#403f63 95%,#403f63 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#313234', endColorstr='#403f63',GradientType=0 ); /* IE6-9 */
+}
+
+.awesome img {
+  width: 400px;
 }
