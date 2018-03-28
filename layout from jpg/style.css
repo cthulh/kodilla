@@ -148,6 +148,10 @@ footer {
   font-weight: bold;
 }
 
+.italic {
+  font-style: italic;
+}
+
 .dots {
   width: 100%;
   bottom: 0;
