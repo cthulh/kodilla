@@ -1,0 +1,49 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.clearfix::before, .clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+header, nav, div, main, footer, section, li {
+  border: 1px solid black;
+}
+
+header {
+  height: 20vh;
+}
+
+nav {
+  height: 100%;
+}
+
+nav {
+  position: relative;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  float: right;
+  min-height: 2vh;
+  min-width: 2vw;
+  margin: 30px;
+  padding: 20px;
+}
+
+.logo {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  min-height: 10vh;
+  min-width: 20vw;
+}
