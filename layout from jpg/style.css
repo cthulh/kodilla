@@ -29,15 +29,15 @@ header>nav ul, .slogan {
   float: right;
 }
 
-header>nav ul li, .dot, .numbers p, .info hr, .info h3 {
+header>nav ul li, .dot, .numbers p, .info hr, .info h3, .info i.fa {
   display: inline-block;
 }
 
-.slogan, .dots, .layer, .layer>i.fa {
+.slogan, .dots, .layer, .layer>i.fa, .awesome .phone {
   position: absolute;
 }
 
-.gallery .col, .hero, .oval {
+.gallery .col, .hero, .oval, .awesome {
   position: relative;
 }
 
@@ -77,7 +77,7 @@ header>nav img {
   background: no-repeat center/cover url("https://s3.eu-west-2.amazonaws.com/some-random-photos/mia-baker-322596-unsplash.jpg");
 }
 
-.slogan, .awesome, .role h2, .icons>i.fa, header>nav ul>li>a, footer, .info {
+.slogan, .awesome, .role h2, .icons>i.fa, header>nav ul>li>a, footer, .info, .info i.fa {
   color: #fff;
 }
 
@@ -85,7 +85,7 @@ header>nav ul>li>a:hover, .icons:hover h2, .numbers p.stat-title {
    color: #01CDEB;
  }
 
- .icons>p, .featured p {
+ .icons~p, .featured p {
    color: #313234;
  }
 
@@ -109,7 +109,7 @@ footer {
   background: #252726;
 }
 
-.icons:hover>i.fa {
+.icons:hover>i.fa, .info i.fa {
   background: #01CDEB;
 }
 
@@ -140,7 +140,7 @@ footer {
   font-weight: 200;
 }
 
-.icons, .featured, .crew h2, .numbers p, .dots, footer {
+.icons, .icons~p, .featured, .crew h2, .numbers p, .dots, footer {
   text-align: center;
 }
 
@@ -204,7 +204,7 @@ footer {
   border-radius: 10px;
 }
 
- .icons>p, .featured p {
+ .icons~p, .featured p {
    padding: 0 40px;
    margin: 4px;
  }
@@ -310,6 +310,14 @@ section>.container {
   width: 400px;
 }
 
+.awesome .phone {
+  bottom: -50px;
+}
+/*
+.awesome {
+  overflow: hidden;
+}
+*/
 .numbers p {
   width: 100%;
 }
@@ -332,4 +340,10 @@ footer {
 .info .col {
   padding: 0;
   padding-left: 10px;
+}
+
+.info i.fa {
+  width: 25px;
+  height: 25px;
+  padding: 5px;
 }
