@@ -108,10 +108,3 @@ i {
 i.fa {
   font-size: 50px;
 }
-
-.middle {
-  height: 33.33%;
-  overflow: auto;
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
