@@ -55,8 +55,17 @@ header {
 }
 
 nav, .hero {
-  position: relative;
   border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+nav {
+  position: relative;
+}
+
+.hero {
+  height: calc(100% - 135.8px);
+  background: url("https://s3.eu-west-2.amazonaws.com/some-random-photos/diego-catto-423903-unsplash.jpg");
+  background-size: cover;
 }
 
 nav ul {
@@ -68,8 +77,6 @@ nav ul {
 nav ul li {
   display: inline-block;
   float: right;
-  min-height: 2vh;
-  min-width: 2vw;
   margin: 30px;
   padding: 20px;
 }
@@ -90,27 +97,16 @@ nav ul li:hover {
   border: none;
 }
 
-.hero {
-  height: 81vh;
-  background: url("https://s3.eu-west-2.amazonaws.com/some-random-photos/diego-catto-423903-unsplash.jpg");
-  background-size: cover;
-}
-
 .pics, .map {
   margin: 5vw 0;
 }
 
 .photo {
-  width: 100%;
   float: left;
   width: 30%;
   margin-right: 5%;
   position: relative;
   overflow: hidden;
-}
-
-.photo:last-of-type {
-  margin-right: 0;
 }
 
 .album-title {
@@ -124,13 +120,18 @@ nav ul li:hover {
   transition: all 0.3s;
 }
 
-.photo>img {
+.photo img {
   display: block;
+  width: 100%;
   margin: 0 auto;
 }
 
 .photo:hover .album-title {
   bottom: 0;
+}
+
+.photo:last-of-type {
+  margin-right: 0;
 }
 
 .bold {
@@ -144,10 +145,6 @@ nav ul li:hover {
 
 .salesbanner {
   background-color: #34495e;
-}
-
-.salesbanner .container {
-  max-height: 60vh;
 }
 
 .salesbanner .container img, .photo img, .map .container img {
@@ -164,10 +161,10 @@ footer p {
   display: block;
   max-width: 60%;
   margin: 0 auto;
-  padding: 1vw;
+  padding: 2vw;
   color: white;
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 1.1rem;
 }
 
 @media (min-width: 1200px) {
@@ -188,7 +185,6 @@ footer p {
   }
 
   .photo {
-    width: 100%;
     width: 33%;
     margin-right: 0.5%;
   }
@@ -199,15 +195,10 @@ footer p {
 
   nav {
     font-size: 1.8rem;
-    height: 20vh;
   }
 
   .map h2, .pics h2, .salesbanner h2 {
     font-size: 2.5rem;
-  }
-
-  .hero {
-    height: 80vh;
   }
 
   .album-title>h3::first-line {
@@ -224,9 +215,10 @@ footer p {
     position: static;
   }
 
-  .logo>img {
+  .logo img {
     display: block;
     margin: 0 auto;
+    margin-top: 5px;
   }
 
   nav ul {
@@ -243,33 +235,37 @@ footer p {
 
   nav {
     font-size: 1.5rem;
-    height: 35vh;
   }
 
   .map h2, .pics h2, .salesbanner h2 {
     font-size: 2rem;
   }
 
+  .hero {
+    height: calc(100% - 226.2px);
+  }
+
   h2 {
     padding-top: 10px;
   }
 
-  .hero {
-    height: 65vh;
-  }
-
   .album-title>h3::first-line {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .album-title>h3 {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
 
-  .photo {
+  .photo, .photo:last-of-type {
     float: none;
     display: block;
     width: 100%;
+    max-width: 300px;
     margin: 20px auto;
+  }
+
+  footer p {
+    font-size: 0.9rem;
   }
 }
