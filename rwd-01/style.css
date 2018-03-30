@@ -1,6 +1,43 @@
+@import url("https://fonts.googleapis.com/css?family=Alegreya+Sans:100,300,400");
+@import url("https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700");
+
+.album-title {
+  font-family: 'Quattrocento Sans', sans-serif;
+}
+
+nav, footer p, .map h2, .pics h2, .salesbanner h2 {
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+nav {
+  font-size: 2rem;
+}
+
+.map h2, .pics h2, .salesbanner h2 {
+  font-size: 3rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+.album-title>h3::first-line {
+  font-size: 1.5rem;
+}
+
+.album-title>h3 {
+  font-size: 1.2rem;
+}
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h2 {
+  padding-top: 20px;
 }
 
 .clearfix::before, .clearfix::after {
@@ -9,20 +46,17 @@
   clear: both;
 }
 
-header, nav, div, main, footer, section, li {
-  border: 1px solid black;
+header, footer {
+  width: 100%;
 }
 
 header {
-  height: 20vh;
+  height: 100vh;
 }
 
-nav {
-  height: 100%;
-}
-
-nav {
+nav, .hero {
   position: relative;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 
 nav ul {
@@ -40,10 +74,202 @@ nav ul li {
   padding: 20px;
 }
 
+nav ul li:hover {
+  color: #34495e;
+  cursor: pointer;
+}
+
 .logo {
   position: absolute;
-  top: 20%;
-  left: 10%;
-  min-height: 10vh;
-  min-width: 20vw;
+  top: calc(50% - 44px);
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  border: none;
+}
+
+.hero {
+  height: 81vh;
+  background: url("https://s3.eu-west-2.amazonaws.com/some-random-photos/diego-catto-423903-unsplash.jpg");
+  background-size: cover;
+}
+
+.pics, .map {
+  margin: 5vw 0;
+}
+
+.photo {
+  width: 100%;
+  float: left;
+  width: 30%;
+  margin-right: 5%;
+  position: relative;
+  overflow: hidden;
+}
+
+.photo:last-of-type {
+  margin-right: 0;
+}
+
+.album-title {
+  font-family: 'Quattrocento Sans', sans-serif;
+  width: 100%;
+  height: 30%;
+  background: rgba(0,0,0,0.8);
+  position: absolute;
+  bottom: -200px;
+  left: 0;
+  transition: all 0.3s;
+}
+
+.photo>img {
+  display: block;
+  margin: 0 auto;
+}
+
+.photo:hover .album-title {
+  bottom: 0;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.album-title>h3, .salesbanner {
+  color: white;
+  text-align: center;
+}
+
+.salesbanner {
+  background-color: #34495e;
+}
+
+.salesbanner .container {
+  max-height: 60vh;
+}
+
+.salesbanner .container img, .photo img, .map .container img {
+  max-width: 100% !important;
+  max-height: 100% !important;
+}
+
+footer {
+  background: rgba(0,0,0,1);
+  margin-top: 5vw;
+}
+
+footer p {
+  display: block;
+  max-width: 60%;
+  margin: 0 auto;
+  padding: 1vw;
+  color: white;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1200px) {
+  nav ul li {
+    margin: 30px 0;
+    padding: 20px 10px;
+  }
+
+  .logo {
+    left: 0;
+  }
+
+  .photo {
+    width: 100%;
+    width: 33%;
+    margin-right: 0.5%;
+  }
+
+  .pics, .salesbanner {
+    margin: 10px 0;
+  }
+
+  nav {
+    font-size: 1.8rem;
+    height: 20vh;
+  }
+
+  .map h2, .pics h2, .salesbanner h2 {
+    font-size: 2.5rem;
+  }
+
+  .hero {
+    height: 80vh;
+  }
+
+  .album-title>h3::first-line {
+    font-size: 1.5rem;
+  }
+
+  .album-title>h3 {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    position: static;
+  }
+
+  .logo>img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  nav ul {
+    margin: 20px auto;
+  }
+
+  nav ul li {
+    display: block;
+    float: none;
+    text-align: center;
+    padding: 5px;
+    margin: 10px;
+  }
+
+  nav {
+    font-size: 1.5rem;
+    height: 35vh;
+  }
+
+  .map h2, .pics h2, .salesbanner h2 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    padding-top: 10px;
+  }
+
+  .hero {
+    height: 65vh;
+  }
+
+  .album-title>h3::first-line {
+    font-size: 1rem;
+  }
+
+  .album-title>h3 {
+    font-size: 0.7rem;
+  }
+
+  .photo {
+    float: none;
+    display: block;
+    width: 100%;
+    margin: 20px auto;
+  }
 }
