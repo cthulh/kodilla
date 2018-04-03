@@ -17,7 +17,7 @@ body {
 
 header {
   width: 100%;
-  height: 50px;
+  /*height: 50px;*/
 }
 
 .slogan h1, .featured h1, .numbers p, header>nav ul, footer>p {
@@ -120,7 +120,7 @@ footer {
 .slogan {
   max-width: 800px;
   padding: 20px 200px 20px 30px;
-  top: 25%;
+  top: calc(50% - 86px);
   right: 0;
 }
 
@@ -140,7 +140,7 @@ footer {
   font-weight: 200;
 }
 
-.icons, .icons~p, .featured, .crew h2, .numbers p, .dots, footer {
+.icons, .icons~p, .featured, .crew h2, .crew h3, .numbers p, .dots, footer {
   text-align: center;
 }
 
@@ -166,7 +166,7 @@ footer {
 
 .col {
   float: left;
-  min-height: 1px;
+  width: 100%;
   padding: 12px;
 }
 
@@ -183,20 +183,6 @@ footer {
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
-
-/* Column offsets */
-.col-offset-1 {margin-left: 8.33%;}
-.col-offset-2 {margin-left: 16.66%;}
-.col-offset-3 {margin-left: 25%;}
-.col-offset-4 {margin-left: 33.33%;}
-.col-offset-5 {margin-left: 41.66%;}
-.col-offset-6 {margin-left: 50%;}
-.col-offset-7 {margin-left: 58.33%;}
-.col-offset-8 {margin-left: 66.66%;}
-.col-offset-9 {margin-left: 75%;}
-.col-offset-10 {margin-left: 83.33%;}
-.col-offset-11 {margin-left: 91.66%;}
-.col-offset-12 {margin-left: 100%;}
 
 .icons>i.fa {
   font-size: 75px;
@@ -248,14 +234,6 @@ section>.container {
   overflow: hidden;
 }
 
-.layer {
-  top: -250px;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  transition: top 0.4s;
-}
-
 .layer>i.fa {
   font-size: 18px;
   padding: 8px;
@@ -269,10 +247,6 @@ section>.container {
 
 .layer>i.fa-search {
   margin-left: 25%;
-}
-
-.col:hover .layer, .oval:hover .layer {
-  top: 0;
 }
 
 .oval {
@@ -297,6 +271,7 @@ section>.container {
   margin-top: 40%;
 }
 
+
 .awesome {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a8b3dc+60,403f63+95,403f63+100 */
   background: #313234; /* Old browsers */
@@ -313,11 +288,7 @@ section>.container {
 .awesome .phone {
   bottom: -50px;
 }
-/*
-.awesome {
-  overflow: hidden;
-}
-*/
+
 .numbers p {
   width: 100%;
 }
@@ -346,4 +317,151 @@ footer {
   width: 25px;
   height: 25px;
   padding: 5px;
+}
+
+@media (max-width: 767px){
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+
+    header>nav ul {
+      float: none;
+      padding-bottom: 10px;
+    }
+
+    header>nav ul li {
+      display: block;
+      text-align: center;
+      font-size: 1.1rem;
+    }
+
+    header>nav ul>li>a {
+      line-height: 30px;
+    }
+
+    header>nav img {
+      display: block;
+      margin: 0 auto;
+    }
+
+    .slogan {
+      padding: 20px 30px;
+      top: calc(50% - 52.3px);
+    }
+
+    .slogan h1, .featured h1 {
+      font-size: 1rem;
+    }
+
+    .dot {
+      width: 20px;
+      height: 20px;
+      margin: 30px;
+    }
+
+    .featured {
+      padding: 0;
+    }
+
+    .layer {
+      bottom: 0;
+      width: 100%;
+      height: 20%;
+    }
+
+    .layer>i.fa {
+      font-size: 20px;
+      padding: 5px;
+      border-radius: 5%;
+      margin: 10px;
+      position: static;
+      float: right;
+    }
+
+    .layer {
+      background: none;
+    }
+
+    .role {
+      display: none;
+    }
+
+    .crew h2, .crew h3 {
+      margin: 3px;
+    }
+
+    .awesome .phone {
+      display: none;
+    }
+
+    .info>.container {
+      padding: 20px;
+    }
+
+    .crew>.container {
+      margin: 0;
+    }
+
+    .info i.fa {
+      width: 35px;
+      height: 35px;
+      padding: 10px;
+      font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 768px) {
+    /* For desktop: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+
+    /* Column offsets */
+    .col-m-offset-1 {margin-left: 8.33%;}
+    .col-m-offset-2 {margin-left: 16.66%;}
+    .col-m-offset-3 {margin-left: 25%;}
+    .col-m-offset-4 {margin-left: 33.33%;}
+    .col-m-offset-5 {margin-left: 41.66%;}
+    .col-m-offset-6 {margin-left: 50%;}
+    .col-m-offset-7 {margin-left: 58.33%;}
+    .col-m-offset-8 {margin-left: 66.66%;}
+    .col-m-offset-9 {margin-left: 75%;}
+    .col-m-offset-10 {margin-left: 83.33%;}
+    .col-m-offset-11 {margin-left: 91.66%;}
+    .col-m-offset-12 {margin-left: 100%;}
+
+    .layer {
+      top: -250px;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      transition: top 0.4s;
+    }
+
+    .col:hover .layer, .oval:hover .layer {
+      top: 0;
+    }
+
+    .only-on-small {
+      display: none;
+    }
 }
