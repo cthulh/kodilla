@@ -37,11 +37,7 @@ header nav ul {
   list-style-type: none;
   margin: 0;
   flex: 2;
-  justify-content: flex-end;
-}
-
-header nav ul li {
-  padding: 3%;
+  justify-content: space-around;
 }
 
 .jumbotron h1 {
@@ -163,4 +159,41 @@ footer p {
 
 .company-name {
   flex-grow: 2;
+}
+
+
+@media (max-width: 768px) {
+
+  .logo, header nav ul li {
+    margin: 1.5vw 0;
+  }
+
+  header nav ul {
+    align-items: center;
+    padding: 0;
+  }
+
+  nav, header nav ul {
+    flex-direction: column;
+  }
+
+  nav {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .album-title>h3::first-line {
+    font-size: 1.1rem;
+  }
+
+  .album-title>h3 {
+    font-size: 0.9rem;
+  }
+
+  footer p {
+    font-size: 0.9rem;
+  }
 }
