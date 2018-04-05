@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css?family=Alegreya+Sans:100,300,400");
+@import url("https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700");
+
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+section {
+  padding: 20px;
+}
+
+.container, nav, header nav ul, .jumbotron, .cards, .card, footer {
+  display: -webkit-flex;
+  display: flex;
+}
+
+nav {
+  justify-content: space-between;
+  -ms-align-items: center;
+  align-items: center;
+  flex: 1;
+}
+
+header {
+  height: 100vh;
+  background: url("https://s3.eu-west-2.amazonaws.com/some-random-photos/diego-catto-423903-unsplash.jpg");
+  background-size: cover;
+}
+
+header nav ul {
+  list-style-type: none;
+  margin: 0;
+  flex: 2;
+  justify-content: flex-end;
+}
+
+header nav ul li {
+  padding: 3%;
+}
+
+.jumbotron h1 {
+  font-size: 3.5rem;
+}
+
+.jumbotron {
+  justify-content: center;
+  align-items: center;
+}
+
+.album-title, .jumbotron h1 {
+  font-family: 'Quattrocento Sans', sans-serif;
+}
+
+nav, footer {
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+nav, .company-name p {
+  font-size: 2rem;
+}
+
+nav, .header {
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+nav ul li:hover {
+  color: #34495e;
+  cursor: pointer;
+}
+
+.photo {
+  margin: 3px;
+}
+
+.gallery h2 {
+  font-size: 3rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+.gallery>.container {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery>.container h2 {
+  flex: 1 100%;
+}
+
+.album-title>h3::first-line {
+  font-size: 1.5rem;
+}
+
+.album-title>h3 {
+  font-size: 1.2rem;
+}
+
+.album-title>h3 {
+  color: white;
+  text-align: center;
+}
+
+.photo {
+  position: relative;
+  max-width: 300px;
+  overflow: hidden;
+}
+
+.album-title {
+  font-family: 'Quattrocento Sans', sans-serif;
+  width: 100%;
+  height: 30%;
+  background: rgba(0,0,0,0.8);
+  position: absolute;
+  bottom: -200px;
+  left: 0;
+  transition: all 0.3s;
+}
+
+.photo:hover .album-title {
+  bottom: 0;
+}
+
+.cards {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin: 3px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    min-width: 200px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+footer {
+  background: rgba(0,0,0,1);
+  margin-top: 5vw;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+footer p {
+  padding: 2vw;
+  margin: 0;
+  color: white;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.company-name {
+  flex-grow: 2;
+}
