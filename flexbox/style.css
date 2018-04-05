@@ -37,7 +37,11 @@ header nav ul {
   list-style-type: none;
   margin: 0;
   flex: 2;
-  justify-content: space-around;
+  justify-content: flex-end;
+}
+
+header nav ul li {
+  padding: 0 3vw;
 }
 
 .jumbotron h1 {
