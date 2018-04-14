@@ -1,0 +1,21 @@
+@import './01-base/base.palette';
+@import './01-base/base.variables';
+
+.list-group {
+  margin-top: 18px;
+  &-item {
+    background-color: $darker;
+  }
+  & a.list-group-item {
+    color: $light-text-color;
+    & span {
+      margin: 0 6px 0 3px;
+    }
+    &:hover, &:focus, &:active, &:first-child, & .badge {
+      background-color: $darkest;
+    }
+    &:hover .badge {
+      background-color: $darker;
+    }
+  }
+}

@@ -13,6 +13,10 @@ body {
 /*
 02 - LAYOUT
 */
+/* Coolors Exported Palette - coolors.co/bf211e-e9ce2c-5b507a-5b618a-69a197 */
+/* RGB */
+/* Coolors Exported Palette - coolors.co/bf211e-e9ce2c-5b507a-5b618a-69a197 */
+/* RGB */
 /*
 03 - MODULES
 */
@@ -61,5 +65,22 @@ header {
 
 header .btn-default {
   margin-top: 18px; }
+
+/* Coolors Exported Palette - coolors.co/bf211e-e9ce2c-5b507a-5b618a-69a197 */
+/* RGB */
+/* Coolors Exported Palette - coolors.co/bf211e-e9ce2c-5b507a-5b618a-69a197 */
+/* RGB */
+.list-group {
+  margin-top: 18px; }
+  .list-group-item {
+    background-color: #5b507a; }
+  .list-group a.list-group-item {
+    color: #fff; }
+    .list-group a.list-group-item span {
+      margin: 0 6px 0 3px; }
+    .list-group a.list-group-item:hover, .list-group a.list-group-item:focus, .list-group a.list-group-item:active, .list-group a.list-group-item:first-child, .list-group a.list-group-item .badge {
+      background-color: #1e1a28; }
+    .list-group a.list-group-item:hover .badge {
+      background-color: #5b507a; }
 
 /*# sourceMappingURL=app.css.map */
