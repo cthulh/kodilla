@@ -1,0 +1,29 @@
+@import './01-base/base.palette';
+@import './01-base/base.variables';
+
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+  min-height: 0;
+  background: $grape;
+
+  &-inverse .navbar-nav > li > a {
+    color: $light-text-color;
+    &:hover, &:focus {
+      opacity: .7;
+    }
+  }
+
+  &-inverse .navbar-brand {
+    color: $yellow;
+    opacity: 0.5;
+  }
+
+  &-brand, li>a {
+    height: 18px;
+    line-height: 18px;
+    padding: 0;
+    margin: 10px 15px;
+    color: $light-text-color;
+  }
+}
