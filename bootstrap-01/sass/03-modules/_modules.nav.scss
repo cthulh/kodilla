@@ -1,3 +1,5 @@
+// NAVBAR
+
 @import './01-base/base.palette';
 @import './01-base/base.variables';
 
@@ -15,7 +17,7 @@
   }
 
   &-inverse .navbar-brand {
-    color: $yellow;
+    color: $light-text-color;
     opacity: 0.5;
   }
 
