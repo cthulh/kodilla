@@ -5,12 +5,12 @@
 
 
 .btn-default {
-  background-color: $grape;
+  background-color: $darker;
   color: $light-text-color;
-  border-color: $dark-gunmetal;
+  border-color: $darkest;
 
   &:hover, &:focus, &:active {
-    background-color: $blue;
+    background-color: $dark;
     color: $light-text-color;
   }
 }
