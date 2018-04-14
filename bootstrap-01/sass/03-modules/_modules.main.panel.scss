@@ -1,0 +1,28 @@
+// MAIN Panel
+@import './01-base/base.variables';
+@import './01-base/base.palette';
+
+.panel {
+  &-default>.panel-heading {
+    background-color: $darkest;
+  }
+
+  &-heading>.panel-title {
+    color: $light-text-color;
+  }
+
+  &-body {
+    background-color: $darker;
+    color: $light-text-color;
+    & h2, & h4 {
+      color: $dark-text-color;
+      text-align: center;
+    }
+    & h4 {
+      font-size: 2.5rem;
+    }
+    & span.glyphicon {
+      margin-right: 25px;
+    }
+  }
+}

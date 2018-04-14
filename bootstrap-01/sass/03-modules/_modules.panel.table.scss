@@ -1,0 +1,27 @@
+// MAIN PANEL TABLE
+
+@import './01-base/base.palette';
+@import './01-base/base.variables';
+
+.users {
+  & .panel-body {
+
+  }
+
+  & .table, & .panel-body {
+    background-color: $background-main-color;
+  }
+
+  & .table td, & .table > thead > tr > th {
+    text-align: center;
+    border: none;
+  }
+
+  & .table > thead {
+
+    & > tr > th {
+      border-bottom: 2px solid $darkest;
+    }
+  }
+
+}

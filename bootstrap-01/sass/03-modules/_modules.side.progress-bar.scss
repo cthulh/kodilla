@@ -1,0 +1,8 @@
+// SIDE PROGRES BAR
+@import './01-base/base.variables';
+@import './01-base/base.palette';
+
+.usage {
+  background-color: $darker;
+  color: $light-text-color;
+}

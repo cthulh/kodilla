@@ -17,6 +17,9 @@ body {
 /* RGB */
 /* Coolors Exported Palette - coolors.co/bf211e-e9ce2c-5b507a-5b618a-69a197 */
 /* RGB */
+main .container {
+  margin-top: 18px; }
+
 /*
 03 - MODULES
 */
@@ -70,17 +73,54 @@ header .btn-default {
 /* RGB */
 /* Coolors Exported Palette - coolors.co/bf211e-e9ce2c-5b507a-5b618a-69a197 */
 /* RGB */
-.list-group {
-  margin-top: 18px; }
-  .list-group-item {
+.list-group-item {
+  background-color: #5b507a; }
+.list-group a.list-group-item {
+  color: #fff; }
+  .list-group a.list-group-item span {
+    margin: 0 6px 0 3px; }
+  .list-group a.list-group-item:hover, .list-group a.list-group-item:focus, .list-group a.list-group-item:active, .list-group a.list-group-item:first-child, .list-group a.list-group-item .badge {
+    background-color: #1e1a28; }
+  .list-group a.list-group-item:hover .badge {
     background-color: #5b507a; }
-  .list-group a.list-group-item {
-    color: #fff; }
-    .list-group a.list-group-item span {
-      margin: 0 6px 0 3px; }
-    .list-group a.list-group-item:hover, .list-group a.list-group-item:focus, .list-group a.list-group-item:active, .list-group a.list-group-item:first-child, .list-group a.list-group-item .badge {
-      background-color: #1e1a28; }
-    .list-group a.list-group-item:hover .badge {
-      background-color: #5b507a; }
+
+/* Coolors Exported Palette - coolors.co/bf211e-e9ce2c-5b507a-5b618a-69a197 */
+/* RGB */
+/* Coolors Exported Palette - coolors.co/bf211e-e9ce2c-5b507a-5b618a-69a197 */
+/* RGB */
+.usage {
+  background-color: #5b507a;
+  color: #fff; }
+
+/* Coolors Exported Palette - coolors.co/bf211e-e9ce2c-5b507a-5b618a-69a197 */
+/* RGB */
+/* Coolors Exported Palette - coolors.co/bf211e-e9ce2c-5b507a-5b618a-69a197 */
+/* RGB */
+.panel-default > .panel-heading {
+  background-color: #1e1a28; }
+.panel-heading > .panel-title {
+  color: #fff; }
+.panel-body {
+  background-color: #5b507a;
+  color: #fff; }
+  .panel-body h2, .panel-body h4 {
+    color: #000;
+    text-align: center; }
+  .panel-body h4 {
+    font-size: 2.5rem; }
+  .panel-body span.glyphicon {
+    margin-right: 25px; }
+
+/* Coolors Exported Palette - coolors.co/bf211e-e9ce2c-5b507a-5b618a-69a197 */
+/* RGB */
+/* Coolors Exported Palette - coolors.co/bf211e-e9ce2c-5b507a-5b618a-69a197 */
+/* RGB */
+.users .table, .users .panel-body {
+  background-color: #f4f4f4; }
+.users .table td, .users .table > thead > tr > th {
+  text-align: center;
+  border: none; }
+.users .table > thead > tr > th {
+  border-bottom: 2px solid #1e1a28; }
 
 /*# sourceMappingURL=app.css.map */
