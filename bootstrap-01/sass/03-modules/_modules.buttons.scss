@@ -1,0 +1,20 @@
+// BUTTONS
+@import './01-base/base.palette';
+@import './01-base/base.variables';
+
+
+
+.btn-default {
+  background-color: $grape;
+  color: $light-text-color;
+  border-color: $dark-gunmetal;
+
+  &:hover, &:focus, &:active {
+    background-color: $blue;
+    color: $light-text-color;
+  }
+}
+
+header .btn-default {
+  margin-top: 18px;
+}
