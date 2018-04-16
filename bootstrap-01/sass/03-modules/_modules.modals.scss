@@ -1,0 +1,32 @@
+.modal {
+  .modal-header, .modal-footer {
+    background-color: $darkest;
+    color: $light-text-color;
+    border: none;
+  }
+  .modal-header .close span {
+    color: $light-text-color;
+  }
+  .modal-body {
+    background-color: $dark;
+    color: $light-text-color;
+    label {
+      margin-top: 1vh;
+    }
+  }
+  .modal-title {
+    font-size: 3rem;
+  }
+  form {
+    margin-bottom: 0;
+  }
+  .modal-footer {
+    .btn.btn-secondary {
+      background-color: $darkest;
+      color: $light-text-color;
+      &:hover, &:focus, &:active {
+        backgound: black;
+      }
+    }
+  }
+}

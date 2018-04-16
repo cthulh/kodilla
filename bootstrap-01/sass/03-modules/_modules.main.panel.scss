@@ -3,6 +3,8 @@
 @import './01-base/base.palette';
 
 .panel {
+  overflow: auto;
+
   &-default>.panel-heading {
     background-color: $darkest;
   }

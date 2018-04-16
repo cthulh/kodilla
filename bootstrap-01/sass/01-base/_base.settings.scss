@@ -5,3 +5,18 @@
 body {
   background-color: $background-main-color;
 }
+
+main {
+  min-height: calc(100vh - 112px - 53px);
+}
+
+footer {
+  background-color: $darkest;
+  color: $light-text-color;
+  line-height: 35px;
+  width: 100%;
+  & p {
+    margin: 0;
+    padding: 15px 0 0 0;
+  }
+}

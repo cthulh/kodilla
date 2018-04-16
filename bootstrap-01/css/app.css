@@ -6,6 +6,18 @@
 body {
   background-color: #f4f4f4; }
 
+main {
+  min-height: calc(100vh - 112px - 53px); }
+
+footer {
+  background-color: #1e1a28;
+  color: #fff;
+  line-height: 35px;
+  width: 100%; }
+  footer p {
+    margin: 0;
+    padding: 15px 0 0 0; }
+
 /* Coolors Exported Palette - coolors.co/bf211e-e9ce2c-5b507a-5b618a-69a197 */
 /* RGB */
 /* Coolors Exported Palette - coolors.co/bf211e-e9ce2c-5b507a-5b618a-69a197 */
@@ -96,20 +108,22 @@ header .btn-default {
 /* RGB */
 /* Coolors Exported Palette - coolors.co/bf211e-e9ce2c-5b507a-5b618a-69a197 */
 /* RGB */
-.panel-default > .panel-heading {
-  background-color: #1e1a28; }
-.panel-heading > .panel-title {
-  color: #fff; }
-.panel-body {
-  background-color: #5b507a;
-  color: #fff; }
-  .panel-body h2, .panel-body h4 {
-    color: #000;
-    text-align: center; }
-  .panel-body h4 {
-    font-size: 2.5rem; }
-  .panel-body span.glyphicon {
-    margin-right: 25px; }
+.panel {
+  overflow: auto; }
+  .panel-default > .panel-heading {
+    background-color: #1e1a28; }
+  .panel-heading > .panel-title {
+    color: #fff; }
+  .panel-body {
+    background-color: #5b507a;
+    color: #fff; }
+    .panel-body h2, .panel-body h4 {
+      color: #000;
+      text-align: center; }
+    .panel-body h4 {
+      font-size: 2.5rem; }
+    .panel-body span.glyphicon {
+      margin-right: 25px; }
 
 /* Coolors Exported Palette - coolors.co/bf211e-e9ce2c-5b507a-5b618a-69a197 */
 /* RGB */
@@ -122,5 +136,32 @@ header .btn-default {
   border: none; }
 .users .table > thead > tr > th {
   border-bottom: 2px solid #1e1a28; }
+
+@media (max-width: 768px) {
+  .users table thead tr {
+    font-size: 1.2rem; }
+
+  .users table tbody tr td {
+    font-size: 1rem; } }
+.modal .modal-header, .modal .modal-footer {
+  background-color: #1e1a28;
+  color: #fff;
+  border: none; }
+.modal .modal-header .close span {
+  color: #fff; }
+.modal .modal-body {
+  background-color: #5b618a;
+  color: #fff; }
+  .modal .modal-body label {
+    margin-top: 1vh; }
+.modal .modal-title {
+  font-size: 3rem; }
+.modal form {
+  margin-bottom: 0; }
+.modal .modal-footer .btn.btn-secondary {
+  background-color: #1e1a28;
+  color: #fff; }
+  .modal .modal-footer .btn.btn-secondary:hover, .modal .modal-footer .btn.btn-secondary:focus, .modal .modal-footer .btn.btn-secondary:active {
+    backgound: black; }
 
 /*# sourceMappingURL=app.css.map */
