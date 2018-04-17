@@ -1,3 +1,7 @@
+// MODALS
+@import './01-base/base.variables';
+@import './01-base/base.palette';
+
 .modal {
   .modal-header, .modal-footer {
     background-color: $darkest;
@@ -19,14 +23,5 @@
   }
   form {
     margin-bottom: 0;
-  }
-  .modal-footer {
-    .btn.btn-secondary {
-      background-color: $darkest;
-      color: $light-text-color;
-      &:hover, &:focus, &:active {
-        backgound: black;
-      }
-    }
   }
 }

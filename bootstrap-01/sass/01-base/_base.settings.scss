@@ -1,4 +1,4 @@
-// SETTINGS
+// BASE SETTINGS
 
 @import 'base.variables';
 
@@ -19,4 +19,9 @@ footer {
     margin: 0;
     padding: 15px 0 0 0;
   }
+}
+
+header {
+  background-color: $background-dark-color;
+  color: $light-text-color;
 }

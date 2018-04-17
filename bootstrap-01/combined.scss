@@ -1,0 +1,215 @@
+// COLORS
+
+$red: rgba(191, 33, 30, 1);
+$yellow: rgba(233, 206, 44, 1);
+$darker: rgba(91, 80, 122, 1);
+$dark: rgba(91, 97, 138, 1);
+$cyan: rgba(105, 161, 151, 1);
+$darkest: #1e1a28;
+
+// VARIABLES
+
+$background-main-color: #f4f4f4;
+$background-dark-color: $darkest;
+
+$light-text-color: #fff;
+$dark-text-color: #000;
+
+// BASE SETTINGS
+
+body {
+  background-color: $background-main-color;
+}
+
+main {
+  min-height: calc(100vh - 112px - 53px);
+}
+
+footer {
+  background-color: $darkest;
+  color: $light-text-color;
+  line-height: 35px;
+  width: 100%;
+  p {
+    margin: 0;
+    padding: 15px 0 0 0;
+  }
+}
+
+header {
+  background-color: $background-dark-color;
+  color: $light-text-color;
+}
+
+main .container {
+  margin-top: 18px;
+}
+
+// BUTTONS
+
+.btn-default, .btn-primary {
+  background-color: $darker;
+  color: $light-text-color;
+  border-color: $darkest;
+
+  &:hover, &:focus, &:active {
+    background-color: $dark;
+    color: $light-text-color;
+  }
+}
+
+.btn.btn-secondary {
+  background-color: $darkest;
+  color: $light-text-color;
+  border: 2px solid $dark;
+  &:hover, &:focus, &:active {
+    background-color: black;
+  }
+}
+
+header .btn-default {
+  margin-top: 18px;
+}
+
+// LIST
+
+.list-group {
+
+  &-item {
+    background-color: $darker;
+  }
+  & a.list-group-item {
+    color: $light-text-color;
+    & span {
+      margin: 0 6px 0 3px;
+    }
+    &:hover, &:focus, &:active, &:first-child, & .badge {
+      background-color: $darkest;
+    }
+    &:hover .badge {
+      background-color: $darker;
+    }
+  }
+}
+
+// MAIN PANEL
+
+.panel {
+  overflow: auto;
+
+  &-default>.panel-heading {
+    background-color: $darkest;
+  }
+
+  &-heading>.panel-title {
+    color: $light-text-color;
+  }
+
+  &-body {
+    background-color: $darker;
+    color: $light-text-color;
+    & h2, & h4 {
+      color: $dark-text-color;
+      text-align: center;
+    }
+    & h4 {
+      font-size: 2.5rem;
+    }
+    & span.glyphicon {
+      margin-right: 25px;
+    }
+  }
+}
+
+// MODALS
+
+.modal {
+  .modal-header, .modal-footer {
+    background-color: $darkest;
+    color: $light-text-color;
+    border: none;
+  }
+  .modal-header .close span {
+    color: $light-text-color;
+  }
+  .modal-body {
+    background-color: $dark;
+    color: $light-text-color;
+    label {
+      margin-top: 1vh;
+    }
+  }
+  .modal-title {
+    font-size: 3rem;
+  }
+  form {
+    margin-bottom: 0;
+  }
+}
+
+// NAVBAR
+
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+  min-height: 0;
+  background: $darker;
+
+  &-inverse .navbar-nav > li > a {
+    color: $light-text-color;
+    &:hover, &:focus {
+      opacity: .7;
+    }
+  }
+
+  &-inverse .navbar-brand {
+    color: $light-text-color;
+    opacity: 0.5;
+  }
+
+  &-brand, li>a {
+    height: 18px;
+    line-height: 18px;
+    padding: 0;
+    margin: 10px 15px;
+    color: $light-text-color;
+  }
+}
+
+// MAIN PANEL TABLE
+
+.users {
+
+  & .table, & .panel-body {
+    background-color: $background-main-color;
+  }
+
+  & .table td, & .table > thead > tr > th {
+    text-align: center;
+    border: none;
+  }
+
+  & .table > thead {
+
+    & > tr > th {
+      border-bottom: 2px solid $darkest;
+    }
+  }
+
+}
+
+@media (max-width: 768px) {
+  .users table thead tr {
+    font-size: 1.2rem;
+  }
+  .users table tbody tr td {
+    font-size: 1rem;
+  }
+}
+
+// SIDE PROGRES BAR
+
+.usage {
+  background-color: $darker;
+  color: $light-text-color;
+}

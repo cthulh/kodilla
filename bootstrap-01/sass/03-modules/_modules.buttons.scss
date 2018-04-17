@@ -4,7 +4,7 @@
 
 
 
-.btn-default {
+.btn-default, .btn-primary {
   background-color: $darker;
   color: $light-text-color;
   border-color: $darkest;
@@ -12,6 +12,15 @@
   &:hover, &:focus, &:active {
     background-color: $dark;
     color: $light-text-color;
+  }
+}
+
+.btn.btn-secondary {
+  background-color: $darkest;
+  color: $light-text-color;
+  border: 2px solid $dark;
+  &:hover, &:focus, &:active {
+    background-color: black;
   }
 }
 
