@@ -28,7 +28,6 @@ main .container {
 
 /*
 03 - MODULES
-
 */
 .navbar {
   margin-bottom: 0;
@@ -113,6 +112,8 @@ header .btn-default {
 
   .users table tbody tr td {
     font-size: 1rem; } }
+.modal .modal-content {
+  border: none; }
 .modal .modal-header, .modal .modal-footer {
   background-color: #1e1a28;
   color: #fff;

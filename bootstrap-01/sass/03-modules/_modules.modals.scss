@@ -3,6 +3,9 @@
 @import './01-base/base.palette';
 
 .modal {
+  .modal-content {
+    border: none;
+  }
   .modal-header, .modal-footer {
     background-color: $darkest;
     color: $light-text-color;
