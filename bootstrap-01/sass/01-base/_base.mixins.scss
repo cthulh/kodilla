@@ -1,0 +1,15 @@
+// MIXINS
+@mixin darkest-bg-text-contrast() {
+  background-color: $darkest;
+  color: $light-text-color;
+}
+
+@mixin darker-bg-text-contrast() {
+  background-color: $darker;
+  color: $light-text-color;
+}
+
+@mixin dark-bg-text-contrast() {
+  background-color: $dark;
+  color: $light-text-color;
+}
