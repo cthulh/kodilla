@@ -1,11 +1,11 @@
-// COLORS
+// COLOR PALETTE
 
-$red: rgba(191, 33, 30, 1);
-$yellow: rgba(233, 206, 44, 1);
+$darkest: #1e1a28;
 $darker: rgba(91, 80, 122, 1);
 $dark: rgba(91, 97, 138, 1);
-$cyan: rgba(105, 161, 151, 1);
-$darkest: #1e1a28;
+
+$neutral: rgba(105, 161, 151, 1);
+
 
 // VARIABLES
 
@@ -15,7 +15,26 @@ $background-dark-color: $darkest;
 $light-text-color: #fff;
 $dark-text-color: #000;
 
+// MIXINS
+
+@mixin darkest-bg-text-contrast() {
+  background-color: $darkest;
+  color: $light-text-color;
+}
+
+@mixin darker-bg-text-contrast() {
+  background-color: $darker;
+  color: $light-text-color;
+}
+
+@mixin dark-bg-text-contrast() {
+  background-color: $dark;
+  color: $light-text-color;
+}
+
 // BASE SETTINGS
+
+@import 'base.variables';
 
 body {
   background-color: $background-main-color;
@@ -26,8 +45,7 @@ main {
 }
 
 footer {
-  background-color: $darkest;
-  color: $light-text-color;
+  @include darkest-bg-text-contrast();
   line-height: 35px;
   width: 100%;
   p {
@@ -37,30 +55,27 @@ footer {
 }
 
 header {
-  background-color: $background-dark-color;
-  color: $light-text-color;
+  @include darker-bg-text-contrast();
 }
 
 main .container {
   margin-top: 18px;
 }
 
+
 // BUTTONS
 
 .btn-default, .btn-primary {
-  background-color: $darker;
-  color: $light-text-color;
+  @include darker-bg-text-contrast();
   border-color: $darkest;
 
   &:hover, &:focus, &:active {
-    background-color: $dark;
-    color: $light-text-color;
+    @include dark-bg-text-contrast();
   }
 }
 
 .btn.btn-secondary {
-  background-color: $darkest;
-  color: $light-text-color;
+  @include darkest-bg-text-contrast();
   border: 2px solid $dark;
   &:hover, &:focus, &:active {
     background-color: black;
@@ -75,15 +90,15 @@ header .btn-default {
 
 .list-group {
 
-  &-item {
+  .list-group-item {
     background-color: $darker;
   }
-  & a.list-group-item {
+  a.list-group-item {
     color: $light-text-color;
-    & span {
+    span {
       margin: 0 6px 0 3px;
     }
-    &:hover, &:focus, &:active, &:first-child, & .badge {
+    &:hover, &:focus, &:active, &:first-child, .badge {
       background-color: $darkest;
     }
     &:hover .badge {
@@ -97,44 +112,44 @@ header .btn-default {
 .panel {
   overflow: auto;
 
-  &-default>.panel-heading {
-    background-color: $darkest;
-  }
-
-  &-heading>.panel-title {
-    color: $light-text-color;
-  }
-
-  &-body {
-    background-color: $darker;
-    color: $light-text-color;
-    & h2, & h4 {
+  .panel-body {
+    @include darker-bg-text-contrast();
+    h2, h4 {
       color: $dark-text-color;
       text-align: center;
     }
-    & h4 {
+    h4 {
       font-size: 2.5rem;
     }
-    & span.glyphicon {
+    span.glyphicon {
       margin-right: 25px;
     }
   }
 }
 
+.panel-default>.panel-heading {
+  background-color: $darkest;
+  >.panel-title {
+    color: $light-text-color;
+  }
+}
+
+
 // MODALS
 
 .modal {
+  .modal-content {
+    border: none;
+  }
   .modal-header, .modal-footer {
-    background-color: $darkest;
-    color: $light-text-color;
+    @include darkest-bg-text-contrast();
     border: none;
   }
   .modal-header .close span {
     color: $light-text-color;
   }
   .modal-body {
-    background-color: $dark;
-    color: $light-text-color;
+    @include dark-bg-text-contrast();
     label {
       margin-top: 1vh;
     }
@@ -153,21 +168,21 @@ header .btn-default {
   margin-bottom: 0;
   border-radius: 0;
   min-height: 0;
-  background: $darker;
+  @include darkest-bg-text-contrast();
 
-  &-inverse .navbar-nav > li > a {
+  .navbar-inverse .navbar-nav > li > a {
     color: $light-text-color;
     &:hover, &:focus {
       opacity: .7;
     }
   }
 
-  &-inverse .navbar-brand {
+  .navbar-inverse .navbar-brand {
     color: $light-text-color;
     opacity: 0.5;
   }
 
-  &-brand, li>a {
+  .navbar-brand, li>a {
     height: 18px;
     line-height: 18px;
     padding: 0;
@@ -180,22 +195,21 @@ header .btn-default {
 
 .users {
 
-  & .table, & .panel-body {
+  .table, .panel-body {
     background-color: $background-main-color;
   }
 
-  & .table td, & .table > thead > tr > th {
+  .table td, .table > thead > tr > th {
     text-align: center;
     border: none;
   }
 
-  & .table > thead {
+  .table > thead {
 
-    & > tr > th {
+    > tr > th {
       border-bottom: 2px solid $darkest;
     }
   }
-
 }
 
 @media (max-width: 768px) {
@@ -210,6 +224,5 @@ header .btn-default {
 // SIDE PROGRES BAR
 
 .usage {
-  background-color: $darker;
-  color: $light-text-color;
+  @include darker-bg-text-contrast();
 }
