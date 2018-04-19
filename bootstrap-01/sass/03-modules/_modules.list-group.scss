@@ -5,15 +5,15 @@
 
 .list-group {
 
-  &-item {
+  .list-group-item {
     background-color: $darker;
   }
-  & a.list-group-item {
+  a.list-group-item {
     color: $light-text-color;
-    & span {
+    span {
       margin: 0 6px 0 3px;
     }
-    &:hover, &:focus, &:active, &:first-child, & .badge {
+    &:hover, &:focus, &:active, &:first-child, .badge {
       background-color: $darkest;
     }
     &:hover .badge {

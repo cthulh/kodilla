@@ -7,21 +7,21 @@
   margin-bottom: 0;
   border-radius: 0;
   min-height: 0;
-  background: $darker;
+  @include darkest-bg-text-contrast();
 
-  &-inverse .navbar-nav > li > a {
+  .navbar-inverse .navbar-nav > li > a {
     color: $light-text-color;
     &:hover, &:focus {
       opacity: .7;
     }
   }
 
-  &-inverse .navbar-brand {
+  .navbar-inverse .navbar-brand {
     color: $light-text-color;
     opacity: 0.5;
   }
 
-  &-brand, li>a {
+  .navbar-brand, li>a {
     height: 18px;
     line-height: 18px;
     padding: 0;

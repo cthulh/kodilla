@@ -5,19 +5,16 @@
 
 
 .btn-default, .btn-primary {
-  background-color: $darker;
-  color: $light-text-color;
+  @include darker-bg-text-contrast();
   border-color: $darkest;
 
   &:hover, &:focus, &:active {
-    background-color: $dark;
-    color: $light-text-color;
+    @include dark-bg-text-contrast();
   }
 }
 
 .btn.btn-secondary {
-  background-color: $darkest;
-  color: $light-text-color;
+  @include darkest-bg-text-contrast();
   border: 2px solid $dark;
   &:hover, &:focus, &:active {
     background-color: black;

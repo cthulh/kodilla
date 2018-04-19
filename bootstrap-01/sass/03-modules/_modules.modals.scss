@@ -7,16 +7,14 @@
     border: none;
   }
   .modal-header, .modal-footer {
-    background-color: $darkest;
-    color: $light-text-color;
+    @include darkest-bg-text-contrast();
     border: none;
   }
   .modal-header .close span {
     color: $light-text-color;
   }
   .modal-body {
-    background-color: $dark;
-    color: $light-text-color;
+    @include dark-bg-text-contrast();
     label {
       margin-top: 1vh;
     }

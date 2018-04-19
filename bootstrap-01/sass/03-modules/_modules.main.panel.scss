@@ -5,26 +5,24 @@
 .panel {
   overflow: auto;
 
-  &-default>.panel-heading {
-    background-color: $darkest;
-  }
-
-  &-heading>.panel-title {
-    color: $light-text-color;
-  }
-
-  &-body {
-    background-color: $darker;
-    color: $light-text-color;
-    & h2, & h4 {
+  .panel-body {
+    @include darker-bg-text-contrast();
+    h2, h4 {
       color: $dark-text-color;
       text-align: center;
     }
-    & h4 {
+    h4 {
       font-size: 2.5rem;
     }
-    & span.glyphicon {
+    span.glyphicon {
       margin-right: 25px;
     }
+  }
+}
+
+.panel-default>.panel-heading {
+  background-color: $darkest;
+  >.panel-title {
+    color: $light-text-color;
   }
 }

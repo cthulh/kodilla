@@ -11,17 +11,15 @@ main {
 }
 
 footer {
-  background-color: $darkest;
-  color: $light-text-color;
+  @include darkest-bg-text-contrast();
   line-height: 35px;
   width: 100%;
-  & p {
+  p {
     margin: 0;
     padding: 15px 0 0 0;
   }
 }
 
 header {
-  background-color: $background-dark-color;
-  color: $light-text-color;
+  @include darker-bg-text-contrast();
 }

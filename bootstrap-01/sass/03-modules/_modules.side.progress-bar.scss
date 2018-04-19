@@ -3,6 +3,5 @@
 @import './01-base/base.palette';
 
 .usage {
-  background-color: $darker;
-  color: $light-text-color;
+  @include darker-bg-text-contrast();
 }

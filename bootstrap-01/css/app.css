@@ -17,7 +17,7 @@ footer {
     padding: 15px 0 0 0; }
 
 header {
-  background-color: #1e1a28;
+  background-color: #5b507a;
   color: #fff; }
 
 /*
@@ -33,15 +33,16 @@ main .container {
   margin-bottom: 0;
   border-radius: 0;
   min-height: 0;
-  background: #5b507a; }
-  .navbar-inverse .navbar-nav > li > a {
+  background-color: #1e1a28;
+  color: #fff; }
+  .navbar .navbar-inverse .navbar-nav > li > a {
     color: #fff; }
-    .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+    .navbar .navbar-inverse .navbar-nav > li > a:hover, .navbar .navbar-inverse .navbar-nav > li > a:focus {
       opacity: .7; }
-  .navbar-inverse .navbar-brand {
+  .navbar .navbar-inverse .navbar-brand {
     color: #fff;
     opacity: 0.5; }
-  .navbar-brand, .navbar li > a {
+  .navbar .navbar-brand, .navbar li > a {
     height: 18px;
     line-height: 18px;
     padding: 0;
@@ -66,7 +67,7 @@ main .container {
 header .btn-default {
   margin-top: 18px; }
 
-.list-group-item {
+.list-group .list-group-item {
   background-color: #5b507a; }
 .list-group a.list-group-item {
   color: #fff; }
@@ -83,20 +84,21 @@ header .btn-default {
 
 .panel {
   overflow: auto; }
-  .panel-default > .panel-heading {
-    background-color: #1e1a28; }
-  .panel-heading > .panel-title {
-    color: #fff; }
-  .panel-body {
+  .panel .panel-body {
     background-color: #5b507a;
     color: #fff; }
-    .panel-body h2, .panel-body h4 {
+    .panel .panel-body h2, .panel .panel-body h4 {
       color: #000;
       text-align: center; }
-    .panel-body h4 {
+    .panel .panel-body h4 {
       font-size: 2.5rem; }
-    .panel-body span.glyphicon {
+    .panel .panel-body span.glyphicon {
       margin-right: 25px; }
+
+.panel-default > .panel-heading {
+  background-color: #1e1a28; }
+  .panel-default > .panel-heading > .panel-title {
+    color: #fff; }
 
 .users .table, .users .panel-body {
   background-color: #f4f4f4; }
